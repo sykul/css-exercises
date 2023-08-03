@@ -17,7 +17,7 @@
   padding: 0;
   margin: 0;
   background-color: rgb(99, 97, 97);
-
+  animation: dropdown-bounce 0.5s;
   display: none;
 }
 
@@ -30,3 +30,14 @@ ul.dropdown-menu li:hover {
 }
 
 
+@keyframes dropdown-bounce {
+  0% {
+    transform: scaleY(0);
+  }
+  70% {
+    transform: scaleY(1.2);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
