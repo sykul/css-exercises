@@ -3,13 +3,17 @@
   padding: 0;
 }
 
+body {
+  height: 100vh;
+}
+
 .container {
   text-align: center;
   display: grid;
-  grid-template-rows: 2fr 1fr 10fr 1fr;
+  grid-template-rows: 2fr 1fr 20fr 1fr;
   grid-template-columns: 1fr 4fr;
-  height: 100%;
   gap: 4px;
+  justify-content: start;
 }
 
 .container div {
@@ -45,7 +49,7 @@
   background-color: #FF7755;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 50px;
   grid-row: 2 / 4;
   grid-column: 1 / 2;
